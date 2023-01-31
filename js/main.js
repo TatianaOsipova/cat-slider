@@ -12,23 +12,45 @@ sliderItems.forEach(function (slide, index) {
     // Add index to every slide
     slide.dataset.index = index;
 
+    // Add data attribute active for first/active slide
+    sliderItems[0].setAttribute('data-active', '');
+
     // Click on the slides
     slide.addEventListener('click', function () {
 
         // Hide current slide        
         slide.classList.add('hidden'); 
+        slide.removeAttribute('data-active');
         
         // Calculate the index of the next slide
-        let nextSlideIndex = index + 1 === sliderItems.length ? 0 : index + 1;
+        const nextSlideIndex = index + 1 === sliderItems.length ? 0 : index + 1;
 
         // Find next slide
         const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
         
         // Show next slide
         nextSlide.classList.remove('hidden'); 
+        nextSlide.setAttribute('data-active', '');
     });
 });
 
 btnNext.onclick = function() {
     console.log('Next Slide');
+
+    // Hide current slide
+    const currentSlide = slider.querySelector('[data-active]');
+    const currentSlideIndex = +currentSlide.dataset.index;
+
+    currentSlide.classList.add('hidden');
+    currentSlide.removeAttribute('data-active');
+
+    // Show next slide
+    const nextSlideIndex = currentSlideIndex + 1 === sliderItems.length ? 0 : currentSlideIndex + 1;
+    const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
+    nextSlide.classList.remove('hidden');
+    nextSlide.setAttribute('data-active', '');
+
+
+    
+
 }
