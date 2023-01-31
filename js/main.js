@@ -1,7 +1,7 @@
 // Elements on the page
 const slider = document.querySelector('#slider');
-
 const sliderItems = Array.from(slider.children);
+const btnNext = document.querySelector('#btnNext');
 
 sliderItems.forEach(function (slide, index) {
     console.log(slide);
@@ -28,3 +28,7 @@ sliderItems.forEach(function (slide, index) {
         nextSlide.classList.remove('hidden'); 
     });
 });
+
+btnNext.onclick = function() {
+    console.log('Next Slide');
+}
