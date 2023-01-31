@@ -12,12 +12,23 @@ sliderItems.forEach(function (slide, index) {
     }
 
     // Add index to every slide
-    
+    slide.dataset.index = index;
+
 
     // Click on the slides
     slide.addEventListener('click', function () {
-        console.log('Next');
-        slide.classList.add('hidden')
 
-    })
+        // Hide current slide        
+        slide.classList.add('hidden'); 
+        
+        // Calculate the index of the next slide
+        const nextSlideIndex = +slide.dataset.index + 1; 
+
+        // Find next slide
+        const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
+        
+        // Show next slide
+        nextSlide.classList.remove('hidden'); 
+
+    });
 });
