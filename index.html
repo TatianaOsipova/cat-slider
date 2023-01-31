@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,45 @@
     <title>Cats slider - 01</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="header__content">
-            <img class="header__logo" src="img/logo.png" alt="cat">
-            <h2 class="header__title">Cats</h2>
-        </div>
+    <!-- header start -->
 
-        <!-- <p class="logo">Cats</p>
-        <h1>Слайдер на JavaScript</h1> -->
+    <header>
+        <div class="container">
+            <div class="header__content">
+                <img class="header__logo" src="img/logo.png" alt="cat">
+                <h2 class="header__title">Cats</h2>
+            </div>
+        </div>
     </header>
 
-    <div class="slider" id="slider">
-        <img src="./img/01.jpg" alt="Slide 01"> 
-        <img src="./img/02.jpg" alt="Slide 02"> 
-        <img src="./img/03.jpg" alt="Slide 03"> 
-    </div>
+    <!-- header end -->
 
-    <div class="controls">
-        <button id="btnPrev">Назад</button>
-        <button id="btnNext">Вперед</button>
-    </div>
+    <!-- main start -->
+
+    <main>
+        <div class="container">
+            <div class="slider" id="slider">
+                <img src="./img/01.jpg" alt="Slide 01">
+                <img src="./img/02.jpg" alt="Slide 02">
+                <img src="./img/03.jpg" alt="Slide 03">
+            </div>
+
+            <div class="controls">
+                <button id="btnPrev">Назад</button>
+                <button id="btnNext">Вперед</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- main end -->
+
+
 
     <script src="js/main.js"></script>
 
 </body>
+
 </html>

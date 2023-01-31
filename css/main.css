@@ -13,9 +13,16 @@ header {
     color: #fff;
 }
 
+.container{
+    max-width: 800px;
+   
+    margin: 0 auto;
+
+}
+
 .header__content{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
