@@ -98,7 +98,7 @@ header {
 .main__decor-after {
     display: flex;
     flex-direction: column;
-    margin-top: -690px;
+    margin-top: -680px;
 }
 
 .main__decor-piece {
@@ -126,26 +126,26 @@ header {
     display: none;
 }
 
+/* Buttons */
 .controls {
     margin: 0 auto;
     padding: 15px 0;
     text-align: center;
 }
 
-/* Buttons */
 button {
     font-size: 18px;
     padding: 0.2rem 1rem;
     cursor: pointer;
-    background-color: rgb(224, 224, 219);
+    background-color:  rgb(186, 246, 200);
     color: #666464;
-    border-color: 1px solid #666464;
+    border: 1px solid #7df603;
     border-radius: 5px;
     transition: background-color .5s ease-in;
 }
 
 button:hover {
-    background-color: rgb(212, 212, 177);
+    background-color: rgb(83, 252, 4);
     transition: background-color .5s ease-in;
 }
 
@@ -169,6 +169,11 @@ button:hover {
     font-size: 20px;
 }
 
-svg:hover {
-    color: red
+.footer__link {
+    transition: fill 0.5s ease-in;
+}
+
+.footer__link:hover path {
+    fill: rgb(83, 252, 4);
+    transition: fill 0.5s ease-in;
 }
