@@ -7,12 +7,12 @@
 }
 
 html,
-body{
+body {
     margin: 0;
     height: 100%;
 }
 
-.wrapper{
+.wrapper {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -20,27 +20,26 @@ body{
 }
 
 /* Header */
-
-header { 
-    margin-top: 0;      
+header {
+    margin-top: 0;
     margin-bottom: 70px;
     padding: 15px 0;
-    background-color: rgb(177, 180, 183);
+    background-color: rgb(219, 155, 58);
     font-family: 'Raleway', sans-serif;
     text-align: center;
     color: #fff;
 }
 
-.container{
-    max-width: 1000px;   
+.container {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.header__content{
+.header__content {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+
 }
 
 .header__logo {
@@ -56,12 +55,84 @@ header {
     align-items: center;
 }
 
+/* Main */
+.main__decor-before {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: -590px;
+    padding: 0;
+    gap: 20px;
+}
+
+.main__decor-item {
+    width: 100px;
+    height: 100px;
+    transform: rotate(30deg);
+}
+
+.one {
+    margin-left: 450px;
+}
+
+.two {
+    margin-left: 350px;
+}
+
+.three {
+    margin-left: 250px;
+}
+
+.four {
+    margin-left: 150px;
+}
+
+.five {
+    margin-left: 50px;
+}
+
+.six {
+    margin-left: -50px;
+}
+
+.main__decor-after {
+    display: flex;
+    flex-direction: column;
+    margin-top: -690px;
+}
+
+.main__decor-piece {
+    width: 100px;
+    height: 100px;
+    transform: rotate(180deg);
+    margin-left: 1600px;
+    margin-bottom: 30px;
+}
+
+.main__decor-piece:last-child {
+    margin-bottom: 0;
+}
+
+/* Slider */
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 450px;
+    background-color: rgb(182, 203, 222);
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
 .controls {
     margin: 0 auto;
     padding: 15px 0;
-    text-align: center;    
+    text-align: center;
 }
 
+/* Buttons */
 button {
     font-size: 18px;
     padding: 0.2rem 1rem;
@@ -73,103 +144,20 @@ button {
     transition: background-color .5s ease-in;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(212, 212, 177);
     transition: background-color .5s ease-in;
-
-
-}
-
-/* Slider */
-main{
-    margin-bottom: 70px;    
-}
-
-.main__decor-before{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-top: -590px;
-    padding: 0; 
-    gap: 20px;    
-}
-
-.main__decor-item{     
-    width: 100px;
-    height: 100px;   
-    transform: rotate(30deg);
-}
-
-.one{
-    margin-left: 450px;
-}
-
-
-
-.two{
-    margin-left: 350px;    
-} 
-
-.three{
-    margin-left: 250px;
-}
-
-.four{
-    margin-left: 150px;
-}
-
-.five{
-    margin-left: 50px;
-}
-
-.six{
-    margin-left: -50px;
-
-}
-
-.main__decor-after{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: -690px;
-
-}
-
-.main__decor-piece{
-    width: 100px;
-    height: 100px;   
-    transform: rotate(180deg);
-    margin-left: 1600px;
-}
-.main__decor-piece:last-child{
-    gap: 0;
-}
-/* .slider__content{
-    margin-bottom: 70px;
-} */
-
-.slider {
-    margin: 0 auto;
-    width: 800px;
-    height: 450px;
-    background-color: rgb(182, 203, 222);  
-    align-items: center;     
-}
-
-.hidden {
-    display: none;
 }
 
 /* Footer */
-
-.footer{   
+.footer {
     margin-top: auto;
     width: 100%;
-    padding: 30px 0;   
-    background-color: rgb(177, 180, 183);
+    padding: 30px 0;
+    background-color: rgb(219, 155, 58);
 }
 
-.footer__content{
+.footer__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -177,11 +165,10 @@ main{
     font-weight: 600;
 }
 
-.footer__title{
+.footer__title {
     font-size: 20px;
 }
 
-svg:hover{
+svg:hover {
     color: red
 }
-
