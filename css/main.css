@@ -1,20 +1,38 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header {   
-    margin-bottom: 30px;
+html,
+body{
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+
+header { 
+    margin-top: 0;      
+    margin-bottom: 70px;
     padding: 15px 0;
-    background-color: rgb(68, 78, 89);
+    background-color: rgb(177, 180, 183);
     font-family: 'Raleway', sans-serif;
     text-align: center;
     color: #fff;
 }
 
 .container{
-    max-width: 800px;   
+    max-width: 1000px;   
     margin: 0 auto;
 }
 
@@ -22,6 +40,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .header__logo {
@@ -40,24 +59,105 @@ header {
 .controls {
     margin: 0 auto;
     padding: 15px 0;
-    text-align: center;
+    text-align: center;    
 }
 
 button {
     font-size: 18px;
     padding: 0.2rem 1rem;
     cursor: pointer;
+    background-color: rgb(224, 224, 219);
+    color: #666464;
+    border-color: 1px solid #666464;
+    border-radius: 5px;
 }
 
-/* Слайдер */
+button:hover{
+
+}
+
+/* Slider */
+main{
+    margin-bottom: 70px;    
+}
+
+.main__decor{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: -590px;
+    padding: 0; 
+    gap: 10px;
+    
+}
+
+.main__decor-item{  
+    
+    width: 100px;
+    height: 100px;   
+    transform: rotate(30deg);
+}
+
+.one{
+    margin-left: 450px;
+
+}
+
+.two{
+    margin-left: 350px;
+    
+    
+} 
+
+.three{
+    margin-left: 250px;
+}
+
+.four{
+    margin-left: 150px;
+}
+.five{
+    margin-left: 50px;
+}
+/* .slider__content{
+    margin-bottom: 70px;
+} */
 
 .slider {
     margin: 0 auto;
     width: 800px;
     height: 450px;
-    background-color: rgb(182, 203, 222);
+    background-color: rgb(182, 203, 222);  
+    align-items: center;
+     
 }
 
 .hidden {
     display: none;
 }
+
+/* Footer */
+
+.footer{   
+    margin-top: auto;
+    width: 100%;
+    padding: 30px 0;   
+    background-color: rgb(177, 180, 183);
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer__title{
+    font-size: 20px;
+}
+
+svg:hover{
+    color: red
+}
+
