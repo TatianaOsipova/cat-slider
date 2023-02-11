@@ -58,7 +58,7 @@ btnPrev.onclick = function() {
     console.log('Prev Slide');
     showNextSlide('prev');
 
-    // // Hide current slide
+    
     // const currentSlide = slider.querySelector('[data-active]');
     // const currentSlideIndex = +currentSlide.dataset.index;
     // currentSlide.classList.add('hidden');
